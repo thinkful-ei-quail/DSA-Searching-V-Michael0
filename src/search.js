@@ -1,5 +1,7 @@
+var now = require("performance-now");
 function indexOf(array, value) {
   for (let i = 0; i < array.length; i++) {
+    //console.log("indexOf Count:",i);
     if (array[i] == value) {
       return i;
     }
@@ -8,7 +10,7 @@ function indexOf(array, value) {
 };
 
 function binarySearch(array, value, start, end, counter = 1) {
-  console.log("counter:", counter);
+  //console.log("counter:", counter);
   let count = counter + 1
   var start = start === undefined ? 0 : start;
   var end = end === undefined ? array.length : end;
@@ -32,7 +34,24 @@ function binarySearch(array, value, start, end, counter = 1) {
   }
 };
 
-const arr = [3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68];
-
-console.log(binarySearch(arr, 8)); 
-console.log(binarySearch(arr, 16)); 
+let arr = [3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68,3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68,3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68,3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68,3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68,3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68];
+function genArry(n)
+{
+  let result = [];
+  for(let i = 0; i<n; i++)
+  {
+    result.push(i + 1);    
+  }
+  return result;
+}
+const num = 75
+arr = genArry(150);
+//console.log(binarySearch(arr, 8));
+let t1 = now(); 
+console.log(binarySearch(arr, num));
+let t2 = now();
+console.log("BinarySearch took:",t2 - t1, "miliseconds");
+t1 = now();
+console.log(indexOf(arr, num));
+t2 = now();
+console.log("IndexOf took:",t2 - t1, "miliseconds");
