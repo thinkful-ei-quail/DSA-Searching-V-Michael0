@@ -34,5 +34,5 @@ function binarySearch(array, value, start, end, counter = 1) {
 
 const arr = [3, 5, 6, 8, 11, 12, 14, 15, 17, 18, 19, 20, 24, 33, 36, 40, 41, 45, 57, 68];
 
-//console.log(binarySearch(arr, 8)); 
 console.log(binarySearch(arr, 8)); 
+console.log(binarySearch(arr, 16)); 
