@@ -68,7 +68,8 @@ function deweySearch(dewey,title,bookIndex)
   }
   return -1;
 }
-DeweyBookIndex = [
+
+const DeweyBookIndex = [
   [
     {
       title:"Meow book",
