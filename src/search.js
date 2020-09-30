@@ -73,25 +73,25 @@ DeweyBookIndex = [
     {
       title:"Meow book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     },
     {
       title:"Bark book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     },
     {
       title:"Mew book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     },
     {
       title:"Potato book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     }
   ],
@@ -99,25 +99,25 @@ DeweyBookIndex = [
     {
       title:"Magic book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     },
     {
       title:"Bad book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     },
     {
       title:"Scary book",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     },
     {
       title:"How to play minecraft",
       desc:"Book of meow",
-      author:"Meowington Jones",
+      author:"Meowington Jr",
       date:"The beginning of time."
     }
   ]
