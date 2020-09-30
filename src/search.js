@@ -55,3 +55,71 @@ t1 = now();
 console.log(indexOf(arr, num));
 t2 = now();
 console.log("IndexOf took:",t2 - t1, "miliseconds");
+function deweySearch(dewey,title,bookIndex)
+{
+  const section = bookIndex[dewey];
+  for(const book in section)
+  {
+    if(section[book].title === title)
+    {
+      return {Dewey:dewey,Index:Number(book),Book:section[book]};
+    }
+  }
+  return -1;
+}
+DeweyBookIndex = [
+  [
+    {
+      title:"Meow book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    },
+    {
+      title:"Bark book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    },
+    {
+      title:"Mew book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    },
+    {
+      title:"Potato book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    }
+  ],
+  [
+    {
+      title:"Magic book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    },
+    {
+      title:"Bad book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    },
+    {
+      title:"Scary book",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    },
+    {
+      title:"How to play minecraft",
+      desc:"Book of meow",
+      author:"Meowington Jones",
+      date:"The beginning of time."
+    }
+  ]
+]
+
+console.log(deweySearch(1,"How to play minecraft",DeweyBookIndex));
