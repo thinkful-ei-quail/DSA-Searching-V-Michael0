@@ -55,6 +55,7 @@ t1 = now();
 console.log(indexOf(arr, num));
 t2 = now();
 console.log("IndexOf took:",t2 - t1, "miliseconds");
+
 function deweySearch(dewey,title,bookIndex)
 {
   const section = bookIndex[dewey];
